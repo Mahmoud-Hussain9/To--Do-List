@@ -1,0 +1,266 @@
+
+
+  body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #270101;
+  }
+  
+  .container {
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	margin-top: 50PX;
+  }
+  
+  h1 {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+	color: #333333;
+  }
+  
+  #to-do-form {
+	display: flex;
+	margin-bottom: 20px;
+  }
+  
+  #to-do-form input[type="text"] {
+	flex-grow: 1;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	outline: none;
+  }
+  
+  #to-do-form button[type="submit"] {
+	padding: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	border: none;
+	color: #ffffff;
+	background-color: #333333;
+	cursor: pointer;
+	font-size: 16px;
+  }
+  
+  #to-do-form button[type="submit"]:hover {
+	background-color: #555555;
+  }
+  
+  #task-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #task-list li {
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+  }
+  
+  #task-list li:hover {
+	background-color: #e2e2e2;
+  }
+  
+  #task-list li .task-status {
+	margin-right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+  #task-list li .task-status.completed {
+	color: #008000;
+	
+  }
+  
+  #task-list li .delete-task {
+	margin-left: 10px;
+	font-size: 20px;
+	color: #ff0000;
+	cursor: pointer;
+  }
+  
+  .options {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .options button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	color: #ffffff;
+	background-color
+	: #333333;
+	cursor: pointer;
+	font-size: 16px;
+	margin-right: 10px;
+	}
+	
+	.options button:hover {
+	background-color: #555555;
+	}
+	
+	#delete-completed-btn {
+	background-color: #008000;
+	}
+	
+	#delete-completed-btn:hover {
+	background-color: #00c000;
+	}
+	
+	#delete-all-btn {
+	background-color: #ff0000;
+	}
+	
+	#delete-all-btn:hover {
+	background-color: #ff3333;
+	}
+	
+
+	  
+	  li.completed {
+		background-color: #e6e6e6;
+		text-decoration: line-through;
+	  }
+	  
+	  li button {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: none;
+		background-color: #ff0000;
+		color: #fff;
+		font-size: 16px;
+		padding: 5px 10px;
+		border-radius: 3px;
+		cursor: pointer;
+	  }
+	  
+	  li button:hover {
+		background-color: #ff3333;
+	  }
+	  
+
+	  #task-input {
+		font-size: 16px;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		width: 250px;
+		margin-right: 10px;
+		outline: none;
+	  }
+	  
+	  #task-input:focus {
+		transform: scale(1.05);
+		transition: transform 0.3s ease-in-out;
+		-webkit-transition: transform 0.3s ease-in-out;
+		-moz-transition: transform 0.3s ease-in-out;
+		-ms-transition: transform 0.3s ease-in-out;
+		-o-transition: transform 0.3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 70%;
+		padding: 10px;
+		margin-top: 50%;
+	}
+	
+	#task-input {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	
+	h1 {
+		font-size: 24px;
+	}
+	
+	li button {
+		right: 5px;
+		top: 5px;
+		font-size: 14px;
+		padding: 3px 6px;
+	}
+
+	#to-do-form input[type="text"] {
+		padding: 20PX;
+	}
+
+	#task-list li {
+		padding: 5PX;
+	}
+
+
+}
+
+
+
+  
+
+  .first {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+	color: #ffffff;
+	position: relative;
+	top: 30px;
+  }
+
+  .circles {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	top: 160px;
+  }
+  
+  .circle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #ff8800;
+	border-radius: 50%;
+	left: 30px;
+	top: 0;
+	animation: bounce 1s ease-in-out infinite;
+  }
+  
+  .circle:nth-child(2) {
+	left: 0;
+	top: 30px;
+	animation-delay: 0.2s;
+  }
+  
+  .circle:nth-child(3) {
+	left: 60px;
+	top: 30px;
+	animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+	0%, 100% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(30px);
+	}
+  }
+  
+
